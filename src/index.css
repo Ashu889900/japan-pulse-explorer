@@ -2,39 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* TrendNow Design System - Japanese-inspired e-commerce platform
+All colors MUST be HSL for consistency
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 99%;
+    --foreground: 220 13% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Modern blue for trust and professionalism */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Warm gray for secondary elements */
+    --secondary: 210 17% 95%;
+    --secondary-foreground: 220 13% 13%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Light background for cards */
+    --muted: 210 17% 97%;
+    --muted-foreground: 220 8% 46%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle accent color */
+    --accent: 210 17% 95%;
+    --accent-foreground: 220 13% 13%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
+    
+    /* TrendNow specific colors */
+    --trending-hot: 0 84% 60%;
+    --trending-hot-foreground: 0 0% 100%;
+    
+    --trending-rising: 25 95% 53%;
+    --trending-rising-foreground: 0 0% 100%;
+    
+    --trending-popular: 217 91% 60%;
+    --trending-popular-foreground: 0 0% 100%;
+    
+    --trending-new: 142 71% 45%;
+    --trending-new-foreground: 0 0% 100%;
+    
+    /* Japanese-inspired gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(25 95% 53%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 17% 99%));
+    
+    /* Elegant shadows */
+    --shadow-card: 0 1px 3px 0 hsl(220 13% 13% / 0.1), 0 1px 2px -1px hsl(220 13% 13% / 0.1);
+    --shadow-card-hover: 0 4px 6px -1px hsl(220 13% 13% / 0.1), 0 2px 4px -2px hsl(220 13% 13% / 0.1);
+    --shadow-trending: 0 0 20px hsl(217 91% 60% / 0.3);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --radius: 0.5rem;
 
